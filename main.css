@@ -1,0 +1,489 @@
+/*  Reset */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* Utility */
+.container {
+    max-width:1500px;
+    
+    padding: 0 20px;
+}
+
+.text-primary {
+    color: #ffba91;
+    padding-top: 600px;
+    
+}
+
+.lead {
+    font-size: 20px;
+}
+
+
+footer{
+    background-color: #444;
+   
+}
+
+
+div.footer{
+    text-align: center;
+    padding-top: 90px;
+    font-size: 32px;
+    color: beige;
+}
+
+.title-footer{
+    text-align: center;
+    color: #4f4040;
+    background-color: #a9835e;
+    margin-bottom:70px;
+    height:1px;
+}
+.footer{
+    display:flex;
+    justify-content: center;
+    background-color: #121317;   
+}
+
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 15px;
+}
+
+
+
+.footer-nav ul li a{
+    color:bisque;
+    margin: 5px;
+    transition: 0.4s;
+    font-size: 16px;
+    opacity: 80%;
+}
+
+.footer-bottom{
+    padding: 5px;
+    text-align: center;
+    background-color:#333;
+    text-decoration-color: beige;
+    color: #e5e5e3;
+}
+/* Nav bar */
+#navbar {
+    background: #333;
+    color: aliceblue;
+    overflow:auto;
+}
+
+
+
+#navbar a {
+    color:#fff;
+}
+
+#navbar h1 {
+     float: left;
+     padding-top:20px;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li :hover, #navbar ul li a.current {
+    background:#444;
+    color:bisque;
+}
+
+/* Showcase */
+#showcase {
+    background: url(main.jpg) no-repeat
+    center center/cover;
+    height: 700px
+}
+#showcase .showcase-content h1 {
+    color:#fff;
+    text-align: center;
+    padding-top: 170px
+}
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    
+}
+
+
+/* Main-Styling */
+
+/* Home Page */
+
+html,body {
+    font-family:'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+}
+
+#body-color {
+    background-image: url('background-img.jpg');
+
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1,h2,h3 {
+    padding-bottom: 20px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.nav-logo{
+    width: 110px;
+    height: 90px;
+}
+
+#para-1{
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    text-align: center ;
+    background-color: #a9835e;
+    padding: 15px 20px;
+}
+
+.dining-home{
+    width: 400px;
+    height:260px;
+    padding-left: 30px;
+}
+
+.sec-1-home {
+    display:grid;
+    grid-template-columns: max-content min-content ;
+}
+
+.sec-1-header{
+    color:#e5e5e3;
+    padding-left:30px;
+    margin-right: 900px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:26px;
+    text-align: left;
+}
+
+.p1-sec-1-img{
+    height:200px;
+    width:350px;
+    padding-left:20px;
+}
+
+.sec-1-para{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size:22px;
+    padding-left:20px;
+}
+
+.grid-1{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.ol-sec-1{
+    padding-left:400px;
+}
+
+.ul-sec-2{
+    padding-left:400px;
+}
+
+.p1-sec-img{
+    height:200px;
+    width:350px;
+    padding-left:20px;
+}
+
+.footer{
+    background-color: #a9835e;
+}
+
+/* Branches Page */
+
+#body-color-2{
+    background-color: #6183b9;
+}
+.p2-title{
+    text-align: center;
+    color:#11130e;
+    margin-top: 30px;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.sec-2-header{
+    color:#fff ;
+    padding-left: 20px;
+    font-size: 28px;
+}
+
+
+.text-primary-2{
+    color: #000000;
+    padding-top: 600px;
+    font-size: 28px;
+
+}
+
+.sec-2-para{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size:24px;
+    padding-left:20px;
+}
+
+.map-1{
+    width:40%;
+    margin-left:300px;
+    margin-top:0px;
+    border-radius: 20px;
+
+} 
+
+.map-2{
+    width:40%;
+    margin-left:300px;
+    margin-top:60px;
+    border-radius: 20px;
+}
+
+.map-3{
+    width:40%;
+    margin-left:300px;
+    margin-top:40px;
+    border-radius: 20px;
+}
+
+.table-1{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+table, th, td {
+    border: 2px solid;
+}
+
+td, th{
+    text-align: center;
+    padding: 12px;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.table-img-1{
+    width:460px;
+    height:300px;
+}
+
+.table-img-2{
+    width:460px;
+    height:300px;
+}
+
+.table-img-3{
+    width:460px;
+    height:300px;
+}
+
+
+
+
+
+
+/* Adventures Page */
+
+#p3-title{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 38px;
+}
+
+.p3-img{
+    height:550px;
+    width:1000px;
+    padding-left:20px
+}
+
+.map-4{
+    margin-top: 75px;
+    margin-right: 140px;
+}
+
+.map-5{
+    margin-top: 75px;
+    margin-right: 140px;
+}
+
+
+
+
+
+/* Restaurents  Page*/
+
+.p3-title{
+    margin-top: 30px;
+    padding-left: 20px;
+    color:#000000;
+    font-size: 36px;
+}
+
+.p4-img-1{
+    width: 670px;
+    height: 420px;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.p4-img-2{
+    width: 670px;
+    height:420px;
+    margin-left: 50px;
+    border-radius:20px;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.p4-sec-title{
+    padding-left: 20px;
+    color: #e5e5e3;
+    font-size: 30px;
+    margin-top:00px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.p4-para{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    padding-left: 20px;
+    margin-right: 50px;
+    margin-top:20px;
+    line-height: 1.1;
+}
+.p4-img{
+    width:350px;
+    height:240px;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+
+
+#menu-link{
+    margin-top: 70px;
+    margin-right:50px;
+}
+.p4-img-4{
+    width:350px;
+    height:240px;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+
+.events-title{
+    color: aliceblue;
+    font-size: 32px;
+    text-align: center;
+}
+
+.events-para{
+    text-align: center;
+    color: #000000;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-size: 24px;
+}
+
+.event-1-link{
+    margin-left: 400px;
+    height: 256px;
+    width:300px;
+}
+
+button{
+    width:100px;
+    height:40px;
+    font-size: 20px;
+    color:#fff;
+    background-color: #555;
+}
+
+.button-1{
+    margin-left: 435px;
+}
+
+.button-2{
+    margin-left:00px;
+}
+
+/* Booking Page */
+
+.booking-title1{
+    font-size: 38px;;
+    margin-left: 50px;
+    margin-top:10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+}
+
+.booking-img1{
+    margin-left: 50px;
+    margin-top: 20px;
+    width:950px;
+    height:580px;
+}
+
+.room-booking-container{
+    background-color: #086884;
+    padding-left:10px;
+    padding-top: 15px;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+label{
+    color: #e5e5e3;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height:2.5;
+    white-space: nowrap;
+}
