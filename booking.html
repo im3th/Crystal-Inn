@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Hotel</title> 
+    <title>Test form</title>
+    <link rel="stylesheet" href="booking.css">
+    <script src="main.js" defer></script>
 </head>
-<body id="body-color">
+<body>
     <header>
         <nav id="navbar">
             <div class="container">
@@ -24,88 +21,144 @@
                 </ul>
             </div>
          </nav>
-    </header>
-    <br>
-    <h1 class="booking-title1">Hotel Room Booking</h1>
-    <div id="booking-img-1">
-        <img src="bedroom-img.jpg" class="booking-img1" alt="img1">
-    </div>
-    <br>
-    <div class='room-booking-container'>
-        <form class="booking-form">
-            <label>Full Name:</label>
-            <input type="text" required>
+         <div id="showcase">
+             <div class='container'>
 
-            <label>Phone Number:</label>
-            <input type="tel" required>
-
-            <label>Check-in Date:</label>
-            <input type="date" name="check-in" required>
-
-            <label>Check-out Date:</label>
-            <input type="date" name="check-in" required>
-
-            <label>Number of Adults:</label>
-            <input type="number" min="1" required>
-
-            <label>Number of Children:</label>
-            <input type="number" min="0" required>
-
-            <button type="submit">Book Now</button>
-
-        </form>
-    </div>
-    <br>
-    <br>
-    <br>
-    <h1 class="booking-title1">Adventure Booking</h1>
-    <div id="booking-img-2">
-        <img src="adventure-img.jpg" class="booking-img1" alt="img2">
-    </div>
-    <br>
-    <div class='room-booking-container'>
-        <form class="booking-form">
-            <label>Full Name:</label>
-            <input type="text" required>
-
-            <label>Phone Number:</label>
-            <input type="tel" required>
-
-            <label>Check-in Date:</label>
-            <input type="date" name="check-in" required>
-
-            <label>Check-out Date:</label>
-            <input type="date" name="check-in" required>
-
-            <label>Number of Adults:</label>
-            <input type="number" min="1" required>
-
-            <label>Number of Children:</label>
-            <input type="number" min="0" required>
-
-            <button type="submit">Book Now</button>
-
-        </form>
-    </div>
-    <br>
-    <br>
-    <br>
-    <footer>
-        <div id="footer-top">
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Contact</a></li>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="index.html">News</a></li>
-                </ul>
-                <br>
-            </div>
+   
+                </div>
         </div>
-        <div class="footer-bottom">
-            <p>Copyright &copy;2023; Designed by Imeth</p>
-        </div>  
-    </footer> 
+    </header>
+    <div class="forumBody">
+        <div>
+            <div >
+                <div>
+                    <fieldset>
+                        <legend>Your Details</legend>
+                        <label>Name:</label>
+                        <input type="text" id="nameCus">
+                        <label>Phone Number:</label>
+                        <input type="text" id="phoneCus">
+                        <label>E-mail</label>
+                        <input type="text" id="cusEmail">
+                    </fieldset>
 
+                    <fieldset>
+                        <legend class="legend">Rooms Details</legend>                        
+                        <p class="room">
+                            <input type="radio" name="roomType" id="single" value="single" >
+                            <label class="classroomType">Single</label>
+                            <input type="radio" name="roomType" id="double" value="double" >
+                            <label class="classroomType">Double</label>
+                            <input type="radio" name="roomType" id="triple" value="triple" >
+                            <label class="classroomType">Triple</label>
+                            <br>
+                            <label class="numofRooms">Number of Rooms :</label>
+                            <input type="number" min="1" max="20" name="roomType" id="rumberofRooms" value="1" class="duration">
+                            <input type="checkbox" name="roomType" id="extraBed" value="extrabed">
+                            <label> Extra Bed </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Number of People</legend>
+                        <p>
+                            <br>
+                            <label class="adultsNum">Number of Adults : </label>
+                            <input type="number" id="adultsnumber" min="1" value="1" max="4" required>
+                            <label class="childrenNum">Number of Children : </label>
+                            <input type="number" id="childrenNumber" min="0" value="0">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Duration</legend>
+                        <p>
+                            <br>
+                            <label class="duration">Check-In : </label>
+                            <input type="date" id="checkIn" required>
+                            <label class="duration">Check-Out : </label>
+                            <input type="date" id="checkOut" required>
+                            <span>
+                                <label id="numofDays">Number of Days</label>
+                            </span>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Extra Requirements : </legend>
+                        <p>
+                            <br>
+                            <label class="duration">WIFI</label>
+                            <input type="checkbox" name="extrareq" id="wifi" value="wifi">
+                        </p>
+                        <label>Different Pool Views : </label>
+                        
+                        <p>
+                            <label class="extrareqlbl">Pool View</label>
+                            <input type="radio" name="extrareq" id="poolview" value="poolview">
+                            <label class="extrareqlbl2">Garden View</label>
+                            <input type="radio" name="extrareq" id="gardenview" value="gardenview">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Promo Code</legend>
+                        <p>
+                            <br>
+                            <label>Promo Code : </label>
+                            <input type="text" id="promocode">
+                        </p>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Adventure : </legend>
+                        <p>
+                            <br>
+                            <label class="adventure">Diving for local Adults (1 hr) </label>
+                            <input type="checkbox" name="adventure" id="localadults" value="localAdults">
+                        </p>
+                        <p>
+                            <label class="adventure">Diving for local kids (above 5 years)</label>
+                            <input type="checkbox" name="adventure" id="localkids" value="locakkids"> 
+                        </p>
+                        <p>
+                            <label class="adventure">Diving for foreign adults </label>
+                            <input type="checkbox" name="adventure" id="foreignadults" value="foreignadults">
+                        </p>
+                        <p>
+                            <label class="adventure">Diving for foreign kids</label>
+                            <input type="checkbox" name="adventure" id="foreignkids" value="foreignkids">
+                        </p>
+                        <label class="guideselection">If in need for a guide during the diving session</label>
+                        <p>
+                            <label class="adultsguideclass">Adult (1000LKR extra will be charged)</label>
+                            <input type="checkbox" name="divinguide" id="adultsguide" value="adultsguide">
+                        </p>
+                        <p>
+                            <label class="adultsguideclass">Kids (500LKR extra will be charged) </label>
+                            <input type="checkbox" name="divinguide" id="kidsguide" value="kidsguide">
+                        </p>
+                    </fieldset>
+                </div>
+            </div>
+            <fieldset>
+                <legend>Current Cost</legend>
+                <p id="currentCostOutput"></p>
+                <p id="output2"></p>
+                <p id="output3"></p>
+            </fieldset>
+            <fieldset>
+                <legend>Book Now</legend>
+                <button type="button" id="bookButton">Book Now</button>
+                <button type="button" id="favButton">Add to Favorites</button>
+
+            </fieldset>
+        </div>
+    </div>
+    <div class="outputDiv" id="popup">
+        <fieldset id="fieldset">
+            <legend>Total</legend>
+            <p id="output1">Order details will be updated here!!!</p>
+            <p id="output2"></p>
+            <p id="output3"></p>
+        
+        </fieldset>
+    </div>
 </body>
-</html>

@@ -1,0 +1,208 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #036c8f;
+    background-image: url('background-img.jpg');
+}
+
+
+footer{
+    background-color: #444;
+   
+}
+
+
+div.footer{
+    text-align: center;
+    padding-top: 90px;
+    font-size: 32px;
+    color: beige;
+}
+
+.title-footer{
+    text-align: center;
+    color: #4f4040;
+    background-color: #a9835e;
+    margin-bottom:70px;
+    height:1px;
+}
+.footer{
+    display:flex;
+    justify-content: center;
+    background-color: #121317;   
+}
+
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 15px;
+}
+
+.margin{
+    margin-top:1px;
+
+}
+.footer-nav ul li a{
+    color:bisque;
+    margin: 5px;
+    transition: 0.4s;
+    font-size: 16px;
+    opacity: 80%;
+}
+
+.footer-bottom{
+    padding: 5px;
+    text-align: center;
+    background-color:#333;
+    text-decoration-color: beige;
+    color: #e5e5e3;
+}
+/* Nav bar */
+#navbar {
+    background: #333;
+    color: aliceblue;
+    overflow:auto;
+}
+
+
+
+#navbar a {
+    color:#fff;
+}
+
+#navbar h1 {
+     float: left;
+     padding-top:20px;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li :hover, #navbar ul li a.current {
+    background:#444;
+    color:bisque;
+}
+
+
+.nav-logo {
+    height: 50px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forumBody {
+    margin: 30px 0;
+    padding-left:400px;
+    padding-right: 400px;
+
+}
+
+
+fieldset {
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    
+}
+
+legend {
+    color: #000000;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #060505;
+
+}
+
+input,
+button {
+    padding: 11px;
+    margin: 6px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#222;
+}
+
+.outputDiv{
+    padding-left: 500px;
+    padding-right:500px;
+}
+
+#fieldset{
+    padding-left:70px;
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        padding: 10px;
+    }
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    ul {
+        flex-direction: column;
+    }
+
+
+}
