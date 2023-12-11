@@ -270,12 +270,11 @@ function outputfunction(){
     outputText1.innerText = `Order has been placed!!!
      \n Order Details :
       \n Room Type is ${room} The number of Rooms ${numofRooms}
-       \n Room Cost is (Without promotions) ${roomcost}
-        \n Extra Requirements are ${extraRequirements}
-         \n Promotion Amount ${promoCost}
-          \n Final Cost Per day ${finalCost}
+       \n Room Cost is (Without promotions): ${roomcost}
+        \n Extra Requirements: ${extraRequirements}
+         \n Promotion Amount: ${promoCost}
            \n Adventure Cost is LKR ${advCost}
-            \n Total Amount ${finalPayable}`;
+            \n Total Amount: ${finalPayable}`;
     outputText3.innerText = "";
     outputText2.innerText = "";
 }

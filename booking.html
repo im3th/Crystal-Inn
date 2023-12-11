@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Form</title>
+    <title>Test form</title>
     <link rel="stylesheet" href="booking.css">
     <script src="main.js" defer></script>
 </head>
@@ -34,11 +34,11 @@
                 <div>
                     <fieldset>
                         <legend>Your Details</legend>
-                        <label>Name:</label>
+                        <label for="nameCus">Name:</label>
                         <input type="text" id="nameCus">
-                        <label>Phone Number:</label>
+                        <label for="phoneCus">Phone Number:</label>
                         <input type="text" id="phoneCus">
-                        <label>E-mail</label>
+                        <label for="cusEmail">E-mail</label>
                         <input type="text" id="cusEmail">
                     </fieldset>
 
@@ -46,13 +46,13 @@
                         <legend class="legend">Rooms Details</legend>                        
                         <p class="room">
                             <input type="radio" name="roomType" id="single" value="single" >
-                            <label class="classroomType">Single</label>
+                            <label for="single" class="classroomType">Single</label>
                             <input type="radio" name="roomType" id="double" value="double" >
-                            <label class="classroomType">Double</label>
+                            <label for="double" class="classroomType">Double</label>
                             <input type="radio" name="roomType" id="triple" value="triple" >
-                            <label class="classroomType">Triple</label>
+                            <label for ="triple"class="classroomType">Triple</label>
                             <br>
-                            <label class="numofRooms">Number of Rooms :</label>
+                            <label for="rumberofRooms"class="numofRooms">Number of Rooms :</label>
                             <input type="number" min="1" max="20" name="roomType" id="rumberofRooms" value="1" class="duration">
                             <input type="checkbox" name="roomType" id="extraBed" value="extrabed">
                             <label> Extra Bed </label>
@@ -62,9 +62,9 @@
                         <legend>Number of People</legend>
                         <p>
                             <br>
-                            <label class="adultsNum">Number of Adults : </label>
+                            <label for="adultsnumber"class="adultsNum">Number of Adults : </label>
                             <input type="number" id="adultsnumber" min="1" value="1" max="4" required>
-                            <label class="childrenNum">Number of Children : </label>
+                            <label for="childrenNumber"class="childrenNum">Number of Children : </label>
                             <input type="number" id="childrenNumber" min="0" value="0">
                         </p>
                     </fieldset>
@@ -72,9 +72,9 @@
                         <legend>Duration</legend>
                         <p>
                             <br>
-                            <label class="duration">Check-In : </label>
+                            <label for="checkIn" class="duration">Check-In : </label>
                             <input type="date" id="checkIn" required>
-                            <label class="duration">Check-Out : </label>
+                            <label for="checkOut" class="duration">Check-Out : </label>
                             <input type="date" id="checkOut" required>
                             <span>
                                 <label id="numofDays">Number of Days</label>
@@ -85,15 +85,15 @@
                         <legend>Extra Requirements : </legend>
                         <p>
                             <br>
-                            <label class="duration">WIFI</label>
+                            <label for="wifi" class="duration">WIFI</label>
                             <input type="checkbox" name="extrareq" id="wifi" value="wifi">
                         </p>
                         <label>Different Pool Views : </label>
                         
                         <p>
-                            <label class="extrareqlbl">Pool View</label>
+                            <label for="poolview" class="extrareqlbl">Pool View</label>
                             <input type="radio" name="extrareq" id="poolview" value="poolview">
-                            <label class="extrareqlbl2">Garden View</label>
+                            <label for="gardenview" class="extrareqlbl2">Garden View</label>
                             <input type="radio" name="extrareq" id="gardenview" value="gardenview">
                         </p>
                     </fieldset>
@@ -101,7 +101,7 @@
                         <legend>Promo Code</legend>
                         <p>
                             <br>
-                            <label>Promo Code : </label>
+                            <label for="promocode">Promo Code : </label>
                             <input type="text" id="promocode">
                         </p>
                     </fieldset>
@@ -111,28 +111,28 @@
                         <legend>Adventure : </legend>
                         <p>
                             <br>
-                            <label class="adventure">Diving for local Adults (1 hr) </label>
-                            <input type="checkbox" name="adventure" id="localadults" value="localAdults">
+                            <label for="localAdults" class="adventure">Diving for local Adults (1 hr) </label>
+                            <input type="checkbox" name="adventure" id="localAdults" value="localAdults">
                         </p>
                         <p>
-                            <label class="adventure">Diving for local kids (above 5 years)</label>
+                            <label for="localkids" class="adventure">Diving for local kids (above 5 years)</label>
                             <input type="checkbox" name="adventure" id="localkids" value="locakkids"> 
                         </p>
                         <p>
-                            <label class="adventure">Diving for foreign adults </label>
+                            <label for="foreignadults" class="adventure">Diving for foreign adults </label>
                             <input type="checkbox" name="adventure" id="foreignadults" value="foreignadults">
                         </p>
                         <p>
-                            <label class="adventure">Diving for foreign kids</label>
+                            <label for="foreignkids" class="adventure">Diving for foreign kids</label>
                             <input type="checkbox" name="adventure" id="foreignkids" value="foreignkids">
                         </p>
                         <label class="guideselection">If in need for a guide during the diving session</label>
                         <p>
-                            <label class="adultsguideclass">Adult (1000LKR extra will be charged)</label>
+                            <label for="adultsguide" class="adultsguideclass">Adult (1000LKR extra will be charged)</label>
                             <input type="checkbox" name="divinguide" id="adultsguide" value="adultsguide">
                         </p>
                         <p>
-                            <label class="adultsguideclass">Kids (500LKR extra will be charged) </label>
+                            <label for="kidsguide" class="adultsguideclass">Kids (500LKR extra will be charged) </label>
                             <input type="checkbox" name="divinguide" id="kidsguide" value="kidsguide">
                         </p>
                     </fieldset>
